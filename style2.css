@@ -1,0 +1,74 @@
+.main-container {
+    display: grid;
+    grid-template-columns: 100px 1fr 250px;
+    grid-template-rows: auto;
+    grid-template-areas: 'hdcont hdcont hdcont' 'hrcont hrcont advert' 'body body sidebar' 'footer footer footer';
+    grid-gap: 10px;
+    background-color: aquamarine;
+    margin: 0 10px 0 10px;
+}
+
+.main-container>div {
+    background-color: aqua;
+}
+
+.head-container {
+    grid-area: hdcont;
+    display: grid;
+    grid-template-columns: 100px 1fr 250px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 'brand globalnav tools';
+    grid-gap: 10px;
+    margin: 10px 0px;
+}
+
+.head-container>div {
+    background-color: azure;
+}
+
+.hero-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'hfeature haction';
+}
+
+.hero-container>div {
+    background-color: azure;
+}
+
+.advert {
+    grid-area: advert;
+}
+
+.body {
+    grid-area: body;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.brand {
+    grid-area: brand;
+}
+
+.globalnav {
+    grid-area: globalnav;
+}
+
+.tools {
+    grid-area: tools;
+}
+
+.hero-feature {
+    grid-area: hfeature;
+}
+
+.hero-action {
+    grid-area: haction;
+}
